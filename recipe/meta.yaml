@@ -10,14 +10,14 @@ source:
   sha256: 279b073df8882f6468c1922d890a66819ca45d86fb0bc609bdb605bf44c309c2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - llnl-sina >=1.14.0
     - networkx >=2.6
     - numpy
@@ -30,7 +30,7 @@ requirements:
     - tqdm
     - cython <3
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - llnl-sina >=1.14.0
     - networkx >=2.6
     - numpy
@@ -51,6 +51,7 @@ test:
     - kosh --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/LLNL/kosh
