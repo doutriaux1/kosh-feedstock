@@ -3,7 +3,7 @@
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "3.4"
 
 source:
   url: https://github.com/LLNL/kosh/archive/v{{ version }}.tar.gz
