@@ -1,5 +1,5 @@
 {% set name = "kosh" %}
-{% set version = "3.1" %}
+{% set version = "3.4" %}
 
 package:
   name: {{ name }}
