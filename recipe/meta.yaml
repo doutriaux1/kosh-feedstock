@@ -29,6 +29,7 @@ requirements:
     - hdbscan
     - tqdm
     - cython <3
+    - filelock
   run:
     - python >={{ python_min }}
     - llnl-sina >=1.14.0
@@ -42,6 +43,7 @@ requirements:
     - hdbscan
     - tqdm
     - cython <3
+    - filelock
 
 test:
   imports:
