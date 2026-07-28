@@ -18,7 +18,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - llnl-sina >=1.14.0
+    - llnl-sina >=1.15.0
     - networkx >=2.6
     - numpy
     - matplotlib-base
@@ -32,7 +32,7 @@ requirements:
     - filelock
   run:
     - python >={{ python_min }}
-    - llnl-sina >=1.14.0
+    - llnl-sina >=1.15.0
     - networkx >=2.6
     - numpy
     - matplotlib-base
